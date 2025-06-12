@@ -1,6 +1,6 @@
 import pandas as pd
 
-data=pd.read_csv ("C:/Palla_ML/clean_study_hours_vs_marks.csv")
+data=pd.read_csv ("C:/Users/HP/PycharmProjects/Machine-Learning-with-Python/clean_study_hours_vs_marks.csv")
 print(data.head(10))
 X=data[["StudyHours"]]
 Y=data["Marks"]
