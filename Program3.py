@@ -13,7 +13,7 @@ for col in data.columns[:-1]:
     mapping = dict(enumerate(data[col].cat.categories))
     print(f"{col}: {mapping}")
     data[col] = data[col].cat.codes
-    print("Categorical to numerical conversion Successful")
+    print("Categorical to Numerical Conversion Successful")
 
     target = "Play Tennis"
     data[target] = data[target].map({'yes': 1, 'No': 0})
