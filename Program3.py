@@ -28,5 +28,8 @@ for col in data.columns[:-1]:
 
     model = DecisionTreeClassifier(criterion='entropy')
 
-    print("\n Train Accuracy is ",model.score(x_train,y_train))
-    print("The Accuracy for Testing ")
+    print("\n Train Accuracy is", model.score(x_train, y_train))
+    print("\n Testing Accuracy is", model.score(x_test, y_test))
+    sample = pd.DataFrame([[2, 1, 0, 1]], columns=x.columns)
+    prediction = model.predict(sample)
+    print("Prediction=", prediction)
