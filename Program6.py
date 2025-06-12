@@ -35,6 +35,7 @@ plt.scatter(kmeans.cluster_centers_[:,0], kmeans.cluster_centers_[:,1], c= 'blac
 plt.xlabel("Income")
 plt.ylabel("Spending Score")
 plt.title("K-Means Clustering")
+plt.show()
 
 
 
