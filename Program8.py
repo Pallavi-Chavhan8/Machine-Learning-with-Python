@@ -17,7 +17,7 @@ y_pred = model.predict(X_test)
 
 from sklearn.metrics import classification_report, accuracy_score
 print("Accuracy : ", accuracy_score(y_test, y_pred))
-print("\n Classification Report :\n", classification_report(y_test, y_pred))
+print("\n Classification Report : \n", classification_report(y_test, y_pred))
 
 correct = X_test[y_test == y_pred]
 wrong = X_test[y_test != y_pred]
